@@ -1,0 +1,96 @@
+.categories-section {
+  padding: 8rem 0;
+  background-color: var(--bg-main);
+}
+
+.featured-section {
+  padding: 8rem 0;
+  background-color: var(--bg-alt);
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 4rem;
+  font-size: 1.25rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.cta-banners-section {
+  padding: 8rem 0;
+  background-color: var(--bg-main);
+}
+
+.cta-banners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.cta-banner {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  border-radius: var(--border-radius-lg);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  gap: 2rem;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.cta-banner:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-content {
+  flex: 1.2;
+}
+
+.cta-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cta-image img {
+  max-width: 120%;
+  transform: rotate(-5deg);
+  transition: var(--transition);
+}
+
+.cta-banner:hover .cta-image img {
+  transform: rotate(0deg) scale(1.1);
+}
+
+.track-banner {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+@media (max-width: 992px) {
+  .categories-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .cta-banners { grid-template-columns: 1fr; }
+  .cta-banner { padding: 3rem; }
+}
+
+@media (max-width: 600px) {
+  .categories-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr; }
+}

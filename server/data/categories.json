@@ -1,0 +1,16 @@
+[
+  { "id": 1, "name": "Supermarket Furniture", "image": "/assets/cat_supermarket.webp" },
+  { "id": 2, "name": "Pharmacy Furniture", "image": "/assets/cat_pharmacy.webp" },
+  { "id": 3, "name": "Commercial Furniture", "image": "/assets/cat_commercial.webp" },
+  { "id": 4, "name": "Laboratory Furniture", "image": "/assets/cat_laboratory.webp" },
+  { "id": 5, "name": "Dormitory Bed Series", "image": "/assets/cat_dormitory.webp" },
+  { "id": 6, "name": "Mobile Compactors", "image": "/assets/cat_compactors.webp" },
+  { "id": 7, "name": "Tool Cabinets", "image": "/assets/cat_cabinets.webp" },
+  { "id": 8, "name": "Industrial Racks", "image": "/assets/cat_industrial.webp" },
+  { "id": 9, "name": "Hospital & Medical Series", "image": "/assets/cat_pharmacy.webp" },
+  { "id": 10, "name": "Library & Archive Storage", "image": "/assets/cat_industrial.webp" },
+  { "id": 11, "name": "Mobile Rack", "image": "/assets/cat_compactors.webp" },
+  { "id": 12, "name": "Work Bench", "image": "/assets/cat_laboratory.webp" },
+  { "id": 13, "name": "Cantilever", "image": "/assets/cat_industrial.webp" },
+  { "id": 14, "name": "Smart IOT Metal Solutions", "image": "/assets/cat_industrial.webp" }
+]

@@ -1,0 +1,32 @@
+.app-shell {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent body scroll */
+  background: var(--bg-main);
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto; /* Internal scroll only */
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 80px; /* Space for bottom nav */
+}
+
+/* Page transitions could be handled here with Framer Motion or simple CSS */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+@media (min-width: 769px) {
+  .app-content {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,130 @@
+.product-listing-page {
+  background-color: var(--bg-alt);
+  padding-bottom: 8rem;
+  min-height: 100vh;
+}
+
+.breadcrumb {
+  padding: 2rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.breadcrumb span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.listing-layout {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.filter-group {
+  background: var(--bg-main);
+  padding: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 120px;
+}
+
+.filter-group h4 {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.filter-section {
+  margin-bottom: 2.5rem;
+}
+
+.filter-section h5 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.checkbox-label:hover {
+  color: var(--primary);
+}
+
+.checkbox-label input {
+  margin-right: 0.75rem;
+  accent-color: var(--secondary);
+}
+
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.main-content {
+  flex: 1;
+}
+
+.listing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.sort-by {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sort-by select {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+  background: var(--bg-main);
+  color: var(--primary);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.products-grid-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1400px) {
+  .products-grid-listing { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 992px) {
+  .listing-layout { flex-direction: column; }
+  .sidebar { width: 100%; }
+  .filter-group { position: static; }
+}
+
+@media (max-width: 600px) {
+  .products-grid-listing { grid-template-columns: 1fr; }
+}

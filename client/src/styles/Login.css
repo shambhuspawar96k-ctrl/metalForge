@@ -1,0 +1,116 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, rgba(249, 115, 22, 0.05), transparent);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 3rem;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border);
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.role-selector-tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  background: var(--bg-alt);
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+}
+
+.role-tab {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--border-radius-sm);
+}
+
+.role-tab.active {
+  background: var(--secondary);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.role-tab:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+}
+
+
+.card-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header p {
+  color: var(--text-muted);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.1);
+}
+
+.btn-block {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.card-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.card-footer p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.card-footer button {
+  background: none;
+  border: none;
+  color: var(--secondary);
+  font-weight: 700;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+}

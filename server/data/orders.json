@@ -1,0 +1,55 @@
+[
+  {
+    "id": "MF-479377",
+    "status": "Order Placed",
+    "estimatedDelivery": "23 Mar 2026",
+    "date": "16 Mar 2026",
+    "customer": "Rahul Sharma",
+    "items": [
+      {
+        "name": "Custom Heavy Duty Rack",
+        "price": 11700,
+        "qty": 1,
+        "image": "/assets/prod_rack.webp",
+        "details": "2100mm, 7 Shelves, Matte Black"
+      }
+    ],
+    "total": 15006,
+    "updates": [
+      {
+        "date": "16 Mar 2026",
+        "message": "Order Confirmed."
+      }
+    ]
+  },
+  {
+    "id": "MF-101010",
+    "status": "In Production",
+    "estimatedDelivery": "25 Mar 2026",
+    "date": "15 Mar 2026",
+    "customer": "Amit Patel",
+    "items": [
+      { "name": "Heavy-Duty Gondola Rack", "price": 5800, "qty": 2 }
+    ],
+    "total": 14168,
+    "updates": [
+      { "date": "15 Mar 2026", "message": "Order Confirmed." },
+      { "date": "18 Mar 2026", "message": "Raw Material Sourcing Completed." }
+    ]
+  },
+  {
+    "id": "MF-202020",
+    "status": "Shipped",
+    "estimatedDelivery": "20 Mar 2026",
+    "date": "10 Mar 2026",
+    "customer": "Priya Singh",
+    "items": [
+      { "name": "Warehouse Heavy Rack", "price": 22000, "qty": 1 }
+    ],
+    "total": 27040,
+    "updates": [
+      { "date": "10 Mar 2026", "message": "Order Placed." },
+      { "date": "15 Mar 2026", "message": "Dispatched via Express Freight." }
+    ]
+  }
+]

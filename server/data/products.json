@@ -1,0 +1,166 @@
+[
+  {
+    "id": 101,
+    "name": "Heavy-Duty Gondola Rack",
+    "price": 5800,
+    "category": "Supermarket Furniture",
+    "image": "/assets/prod_rack.webp",
+    "description": "High-quality, customizable double sided gondola rack for retail and supermarket use. Features modular design for easy assembly.",
+    "rating": 4.8,
+    "reviews": 156,
+    "inStock": true,
+    "specifications": {
+      "Material": "High-Grade Cold Rolled Steel",
+      "Finish": "Powder Coated (Anti-Corrosive)",
+      "Layer Capacity": "100kg per shelf",
+      "Adjustability": "Variable slot height",
+      "Dimensions": "1800H x 900W x 450D mm"
+    }
+  },
+  {
+    "id": 102,
+    "name": "Pharmacy Shelving Unit",
+    "price": 12500,
+    "category": "Pharmacy Furniture",
+    "image": "/assets/prod_shelving.webp",
+    "description": "Durable and adjustable shelving unit designed for pharmaceutical storage. Includes glass front options for visibility.",
+    "rating": 4.5,
+    "reviews": 89,
+    "inStock": true,
+    "specifications": {
+      "Material": "Medical Grade Stainless Steel",
+      "Coating": "Anti-microbial Silver Ion",
+      "Safety": "Rounded edges, lockable doors",
+      "Assembly": "Tool-free click system"
+    }
+  },
+  {
+    "id": 103,
+    "name": "Military Grade Bunk Bed",
+    "price": 9200,
+    "category": "Dormitory Bed Series",
+    "image": "/assets/prod_bunk.webp",
+    "description": "Strong and space-saving metal bunk bed for dormitories and hostels. Reinforced joints for extreme durability.",
+    "rating": 4.7,
+    "reviews": 210,
+    "inStock": true,
+    "specifications": {
+      "Frame": "2.0mm Heavy Gauge Steel Tube",
+      "Finish": "Scratch-resistant epoxy",
+      "Safety": "Dual guard rails, integrated ladder",
+      "Weight Capacity": "250kg total load"
+    }
+  },
+  {
+    "id": 104,
+    "name": "Double Sided Retail Island",
+    "price": 7600,
+    "category": "Supermarket Furniture",
+    "image": "/assets/prod_rack.webp",
+    "description": "Premium double-sided rack with high load capacity. Perfect for central aisle product displays.",
+    "rating": 4.9,
+    "reviews": 64,
+    "inStock": true,
+    "specifications": {
+      "Type": "Free-standing Island",
+      "Base": "Reinforced T-Base stability",
+      "Shelves": "8 Adjustable trays",
+      "Color": "Slate Grey / Custom"
+    }
+  },
+  {
+    "id": 109,
+    "name": "Warehouse Heavy Rack",
+    "price": 22000,
+    "category": "Industrial Racks",
+    "image": "/assets/hero_rack.webp",
+    "description": "Boltless industrial shelving for heavy equipment and warehouse storage. High-visibility orange beams.",
+    "rating": 4.7,
+    "reviews": 55,
+    "inStock": true,
+    "specifications": {
+      "Beam": "Reinforced step beam profile",
+      "Uprights": "Cold-rolled C-section",
+      "Decking": "Galvanized steel / Mesh",
+      "Pitch": "50mm vertical adjustability"
+    }
+  },
+  {
+    "id": 160,
+    "name": "Mezzanine Floor System",
+    "price": 250000,
+    "category": "Mezzanine",
+    "image": "/assets/cat_industrial.webp",
+    "description": "Customizable mezzanine floor for multi-level industrial storage. Maximize your vertical space.",
+    "rating": 4.8,
+    "reviews": 12,
+    "inStock": true,
+    "specifications": {
+      "Material": "Circular GI Section",
+      "Height": "Variable",
+      "Load": "500kg/sqm",
+      "Mount": "Floor flange bolted"
+    }
+  },
+  {
+    "id": 161,
+    "name": "Slotted Angle Racking",
+    "price": 4500,
+    "category": "Slotted Angle",
+    "image": "/assets/prod_shelving.webp",
+    "description": "Versatile and economical slotted angle shelving for light to medium storage needs.",
+    "rating": 4.6,
+    "reviews": 88,
+    "inStock": true,
+    "specifications": {
+      "Material": "Cold Rolled Steel",
+      "Finish": "Powder Coated",
+      "Levels": "5 Tiers"
+    }
+  },
+  {
+    "id": 162,
+    "name": "Mobile Compactor System",
+    "price": 125000,
+    "category": "Mobile Rack",
+    "image": "/assets/cat_compactors.webp",
+    "description": "High-density mobile storage solution for archives and heavy documents.",
+    "rating": 4.9,
+    "reviews": 14,
+    "inStock": true,
+    "specifications": {
+      "Drive": "Mechanical hand-wheel",
+      "Tracks": "Floor mounted"
+    }
+  },
+  {
+    "id": 163,
+    "name": "Industrial Work Bench",
+    "price": 18500,
+    "category": "Work Bench",
+    "image": "/assets/cat_laboratory.webp",
+    "description": "Heavy-duty workstation with built-in storage for assembly and workshop use.",
+    "rating": 4.7,
+    "reviews": 22,
+    "inStock": true,
+    "specifications": {
+      "Top": "Steel / Wooden options",
+      "Load": "300kg"
+    }
+  },
+  {
+    "id": 164,
+    "name": "Cantilever Rack",
+    "price": 32000,
+    "category": "Cantilever",
+    "image": "/assets/hero_rack.webp",
+    "description": "Ideal for storing long, bulky items like pipes, timber, and metal bars.",
+    "rating": 4.8,
+    "reviews": 9,
+    "inStock": true,
+    "specifications": {
+      "Arm Type": "Adjustable Pivot",
+      "Finish": "Oven baked coating"
+    }
+  }
+]

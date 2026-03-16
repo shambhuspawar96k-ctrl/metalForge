@@ -1,0 +1,227 @@
+.about-hero {
+  padding: 8rem 0;
+  background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.1), transparent), 
+              var(--bg-alt);
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.about-hero h1 span {
+  color: var(--secondary);
+}
+
+.about-content {
+  padding: 4rem;
+  margin-top: -4rem;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.text-side h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.text-side p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.stats-side {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: var(--bg-main);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  border-color: var(--secondary);
+  transform: translateY(-5px);
+}
+
+.stat-num {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+.values-section {
+  padding: 8rem 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.value-card {
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+}
+
+.value-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.team-section {
+  padding: 8rem 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.team-card {
+  padding: 3rem;
+  text-align: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.team-card:hover {
+  border-color: var(--secondary);
+  transform: translateY(-10px);
+}
+
+.team-avatar {
+  width: 80px;
+  height: 80px;
+  background: var(--bg-alt);
+  color: var(--secondary);
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: 2px solid var(--border);
+}
+
+.team-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.team-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.milestones-section {
+  padding: 4rem;
+  margin-bottom: 8rem;
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border);
+}
+
+.milestones-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.milestone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.milestone-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.m-year {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--secondary);
+  position: relative;
+}
+
+.m-year::after {
+  content: '';
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+  transform: translateY(-50%);
+}
+
+.milestone-item p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .milestone-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .m-year::after { display: none; }
+}
+
+.value-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.simple-footer {
+  padding: 4rem 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .content-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .values-grid { grid-template-columns: 1fr; }
+  .about-hero h1 { font-size: 2.5rem; }
+}

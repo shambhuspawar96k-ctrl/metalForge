@@ -1,0 +1,115 @@
+.navbar {
+  background-color: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-links .customize-link {
+  color: var(--primary);
+  font-weight: 700;
+  border: 1px solid var(--primary);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--border-radius-sm);
+  background: rgba(249, 115, 22, 0.05);
+}
+
+.nav-links .customize-link:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-actions .btn {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    display: none;
+  }
+}
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-alt);
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.profile-btn:hover {
+  border-color: var(--secondary);
+  background: var(--bg-main);
+}
+
+.profile-btn span {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
