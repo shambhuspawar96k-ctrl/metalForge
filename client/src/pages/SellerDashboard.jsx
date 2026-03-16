@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getProducts } from '../services/api';
 import Navbar from '../components/Navbar';
 import '../styles/SellerDashboard.css';
 
@@ -21,8 +22,7 @@ const SellerDashboard = () => {
     }
 
     // Fetch products belonging to this seller (mocked)
-    fetch('/api/products')
-      .then(res => res.json())
+    getProducts()
       .then(data => {
         setProducts(data.slice(0, 5));
         setStats(prev => ({ ...prev, inventoryCount: data.length }));

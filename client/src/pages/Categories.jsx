@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getCategories } from '../services/api';
 import Navbar from '../components/Navbar';
 import CategoryCard from '../components/CategoryCard';
 import '../styles/Categories.css';
@@ -9,8 +10,7 @@ const Categories = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/api/categories')
-      .then(res => res.json())
+    getCategories()
       .then(data => setCategories(data))
       .catch(err => console.error('Error fetching categories:', err));
   }, []);

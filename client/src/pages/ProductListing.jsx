@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
+import { getProducts } from '../services/api';
 import ProductCard from '../components/ProductCard';
 import '../styles/ProductListing.css';
 
@@ -13,8 +14,7 @@ const ProductListing = () => {
   const [sortBy, setSortBy] = useState('Most Popular');
 
   useEffect(() => {
-    fetch('/api/products')
-      .then(res => res.json())
+    getProducts()
       .then(data => {
         setProducts(data);
         setFilteredProducts(data);

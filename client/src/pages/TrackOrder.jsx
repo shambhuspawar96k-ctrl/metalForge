@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
+import { getOrderById } from '../services/api';
 import '../styles/TrackOrder.css';
 
 const TrackOrder = () => {
@@ -17,11 +18,7 @@ const TrackOrder = () => {
     setStatus(null);
 
     try {
-      const response = await fetch(`/api/orders/${orderId}`);
-      if (!response.ok) {
-        throw new Error('Order not found or server error');
-      }
-      const data = await response.json();
+      const data = await getOrderById(orderId);
       setStatus(data);
     } catch (err) {
       setError('Could not find order. Please check the ID and try again.');
@@ -66,6 +63,21 @@ const TrackOrder = () => {
                   <span className="value">{status.estimatedDelivery}</span>
                 </div>
               </div>
+
+              {status.items && status.items.length > 0 && (
+                <div className="track-items-list" style={{ marginTop: '2rem', padding: '1rem', background: 'rgba(255,255,255,0.05)', borderRadius: '8px' }}>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>Items in this Shipment</h3>
+                  {status.items.map((item, idx) => (
+                    <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                      <img src={item.image || '/assets/prod_rack.png'} alt={item.name} style={{ width: '60px', height: '60px', objectFit: 'cover', borderRadius: '8px' }} />
+                      <div>
+                        <div style={{ fontWeight: 'bold' }}>{item.name}</div>
+                        <div style={{ opacity: 0.8, fontSize: '0.9rem' }}>Qty: {item.qty}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               <div className="timeline">
                 {status.updates.map((update, index) => (

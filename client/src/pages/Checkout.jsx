@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { placeOrder } from '../services/api';
 import Navbar from '../components/Navbar';
 import '../styles/Checkout.css';
 
@@ -62,23 +63,16 @@ const Checkout = () => {
       return;
     }
     try {
-      const response = await fetch('/api/orders', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          shipping,
-          items: [cartItem],
-          total
-        })
+      const data = await placeOrder({
+        shipping,
+        items: [cartItem],
+        total
       });
-      if (response.ok) {
-        const data = await response.json();
-        localStorage.removeItem('customConfig'); // Clear after order
-        localStorage.removeItem('selectedProduct'); // Clear after order
-        setIsOrdered(true);
-        // We'll use the ID from the response in the success message
-        window.tempOrderId = data.orderId; 
-      }
+      localStorage.removeItem('customConfig'); // Clear after order
+      localStorage.removeItem('selectedProduct'); // Clear after order
+      setIsOrdered(true);
+      // We'll use the ID from the response in the success message
+      window.tempOrderId = data.orderId; 
     } catch (err) {
       console.error('Order failed:', err);
     }

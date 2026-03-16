@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { getProductById, getProducts } from '../services/api';
 import Navbar from '../components/Navbar';
 import ProductCard from '../components/ProductCard';
 import '../styles/ProductDetail.css';
@@ -11,13 +12,11 @@ const ProductDetail = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`/api/products/${id}`)
-      .then(res => res.json())
+    getProductById(id)
       .then(data => setProduct(data))
       .catch(err => console.error(err));
 
-    fetch('/api/products')
-      .then(res => res.json())
+    getProducts()
       .then(data => setRelatedProducts(data.filter(p => p.id !== parseInt(id)).slice(0, 3)))
       .catch(err => console.error(err));
   }, [id]);

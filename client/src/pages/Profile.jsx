@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getOrders } from '../services/api';
 import Navbar from '../components/Navbar';
 import '../styles/Profile.css';
 
@@ -17,8 +18,7 @@ const Profile = () => {
 
   React.useEffect(() => {
     if (user) {
-      fetch('/api/orders')
-        .then(res => res.json())
+      getOrders()
         .then(data => setOrders(data))
         .catch(err => console.error(err));
     }
@@ -72,8 +72,11 @@ const Profile = () => {
               <h2>Recent Orders</h2>
               <div className="order-list">
                 {orders.length > 0 ? orders.map(order => (
-                  <div key={order.id} className="order-card" onClick={() => navigate('/track')}>
-                    <div className="order-info">
+                  <div key={order.id} className="order-card" onClick={() => navigate('/track')} style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className="order-item-image" style={{ marginRight: '1rem' }}>
+                      <img src={order.items && order.items[0]?.image ? order.items[0].image : '/assets/prod_rack.png'} alt="Order item" style={{ width: '50px', height: '50px', objectFit: 'cover', borderRadius: '4px' }} />
+                    </div>
+                    <div className="order-info" style={{ flex: 1 }}>
                       <span className="order-id">{order.id}</span>
                       <span className="order-date">Placed on {order.date}</span>
                     </div>

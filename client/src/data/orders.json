@@ -29,12 +29,23 @@
     "date": "15 Mar 2026",
     "customer": "Amit Patel",
     "items": [
-      { "name": "Heavy-Duty Gondola Rack", "price": 5800, "qty": 2 }
+      {
+        "name": "Heavy-Duty Gondola Rack",
+        "price": 5800,
+        "qty": 2,
+        "image": "/assets/prod_rack.webp"
+      }
     ],
     "total": 14168,
     "updates": [
-      { "date": "15 Mar 2026", "message": "Order Confirmed." },
-      { "date": "18 Mar 2026", "message": "Raw Material Sourcing Completed." }
+      {
+        "date": "15 Mar 2026",
+        "message": "Order Confirmed."
+      },
+      {
+        "date": "18 Mar 2026",
+        "message": "Raw Material Sourcing Completed."
+      }
     ]
   },
   {
@@ -44,12 +55,23 @@
     "date": "10 Mar 2026",
     "customer": "Priya Singh",
     "items": [
-      { "name": "Warehouse Heavy Rack", "price": 22000, "qty": 1 }
+      {
+        "name": "Warehouse Heavy Rack",
+        "price": 22000,
+        "qty": 1,
+        "image": "/assets/prod_warehouse_rack.png"
+      }
     ],
     "total": 27040,
     "updates": [
-      { "date": "10 Mar 2026", "message": "Order Placed." },
-      { "date": "15 Mar 2026", "message": "Dispatched via Express Freight." }
+      {
+        "date": "10 Mar 2026",
+        "message": "Order Placed."
+      },
+      {
+        "date": "15 Mar 2026",
+        "message": "Dispatched via Express Freight."
+      }
     ]
   }
 ]

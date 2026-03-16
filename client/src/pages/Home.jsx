@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getCategories, getProducts } from '../services/api';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import CategoryCard from '../components/CategoryCard';
@@ -12,13 +13,11 @@ const Home = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('/api/categories')
-      .then(res => res.json())
+    getCategories()
       .then(data => setCategories(data))
       .catch(err => console.error('Error fetching categories:', err));
 
-    fetch('/api/products')
-      .then(res => res.json())
+    getProducts()
       .then(data => setProducts(data.slice(0, 3))) // Show only first 3 featured products
       .catch(err => console.error('Error fetching products:', err));
   }, []);
